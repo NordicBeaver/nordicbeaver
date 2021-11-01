@@ -5,6 +5,10 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+body {
+  background-color: #141115;
+}
+
 a {
   color: inherit;
   text-decoration: none;
