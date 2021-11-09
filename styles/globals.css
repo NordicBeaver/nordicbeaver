@@ -1,3 +1,9 @@
+:root {
+  --bg-color: #141115;
+  --acc-color: #894efd;
+  --text-color: #ffffff;
+}
+
 html,
 body {
   padding: 0;
@@ -6,7 +12,7 @@ body {
 }
 
 body {
-  background-color: #141115;
+  background-color: var(--bg-color);
 }
 
 a {
