@@ -1,0 +1,10 @@
+.article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2em;
+  margin-bottom: 3em;
+}
+
+.video {
+  width: 100%;
+}
