@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './ProjectArticle.module.css';
 import Image from 'next/image';
+import KeywordsList from './KeywordsList';
 
 export interface Project {
   title: string;
@@ -29,11 +30,7 @@ export default function ProjectArticle({ project }: ProjectArticleProps) {
       <div>
         <h3>{project.title}</h3>
         <p>{project.description}</p>
-        <ul>
-          {project.tags.map((tag) => (
-            <li key={tag}>{tag}</li>
-          ))}
-        </ul>
+        <KeywordsList keywords={project.tags}></KeywordsList>
       </div>
     </article>
   );
