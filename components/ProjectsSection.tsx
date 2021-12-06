@@ -8,14 +8,24 @@ const projects: Project[] = [
   {
     title: 'Pendulums in ThreeJs',
     description: 'I was playing around with Three.js and I got an idea of this simple yet interesting animation.',
-    tags: ['web development', 'javascript', 'typescript', 'WebGL', 'Three.js'],
-    promoVideoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/Pendulums.mp4',
+    tags: ['Web Development', 'JavaScript', 'TypeScript', 'WebGL', 'Three.js'],
+    promoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/Pendulums.mp4',
+    promoType: 'video',
   },
   {
     title: 'Tilter',
-    description: 'My attempt to recreate a labyrinth game in a browser',
-    tags: ['web development', 'game development', 'javascript', 'typescript'],
-    promoVideoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/Tilter_promo.mov',
+    description: 'My attempt to recreate a labyrinth game in a browser.',
+    tags: ['Web Development', 'Game Development', 'JavaScript', 'TypeScript'],
+    promoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/Tilter_promo.mov',
+    promoType: 'video',
+  },
+  {
+    title: 'BeardyBear',
+    description:
+      "An example of a small website for a local business. I'm doing this mainly for my YouTube series where I try to show how to make something like this.",
+    tags: ['Web Development', 'JavaScript', 'TypeScript', 'NodeJs', 'NestJs', 'Prisma', 'React', 'NextJs'],
+    promoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/beardybear-promo-pic.jpg',
+    promoType: 'picture',
   },
 ];
 
