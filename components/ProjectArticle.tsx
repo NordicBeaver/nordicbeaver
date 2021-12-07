@@ -2,6 +2,13 @@ import React from 'react';
 import styles from './ProjectArticle.module.css';
 import Image from 'next/image';
 import KeywordsList from './KeywordsList';
+import * as feather from 'react-feather';
+
+export interface ProjectLinks {
+  live?: string;
+  github?: string;
+  youtube?: string;
+}
 
 export interface Project {
   title: string;
@@ -9,6 +16,7 @@ export interface Project {
   promoType: 'video' | 'picture';
   description: string;
   tags: string[];
+  links: ProjectLinks;
 }
 
 export interface ProjectArticleProps {
@@ -31,6 +39,41 @@ export default function ProjectArticle({ project }: ProjectArticleProps) {
         <h3>{project.title}</h3>
         <p>{project.description}</p>
         <KeywordsList keywords={project.tags}></KeywordsList>
+        <div>
+          {project.links.live ? (
+            <a
+              href={project.links.live}
+              className={styles.link}
+              target="_blank"
+              rel="noreferrer"
+              title={`Live Version - ${project.title}`}
+            >
+              <feather.Link></feather.Link>
+            </a>
+          ) : null}
+          {project.links.github ? (
+            <a
+              href={project.links.github}
+              className={styles.link}
+              target="_blank"
+              rel="noreferrer"
+              title={`GitHub - ${project.title}`}
+            >
+              <feather.GitHub></feather.GitHub>
+            </a>
+          ) : null}
+          {project.links.youtube ? (
+            <a
+              href={project.links.youtube}
+              className={styles.link}
+              target="_blank"
+              rel="noreferrer"
+              title={`YouTube - ${project.title}`}
+            >
+              <feather.Youtube></feather.Youtube>
+            </a>
+          ) : null}
+        </div>
       </div>
     </article>
   );

@@ -11,6 +11,11 @@ const projects: Project[] = [
     tags: ['Web Development', 'JavaScript', 'TypeScript', 'WebGL', 'Three.js'],
     promoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/Pendulums.mp4',
     promoType: 'video',
+    links: {
+      live: 'https://threejspendulums.nordicbeaver.io/',
+      github: 'https://github.com/NordicBeaver/threejs-pendulums',
+      youtube: 'https://youtu.be/43WXC0rPKcE',
+    },
   },
   {
     title: 'Tilter',
@@ -18,14 +23,11 @@ const projects: Project[] = [
     tags: ['Web Development', 'Game Development', 'JavaScript', 'TypeScript'],
     promoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/Tilter_promo.mov',
     promoType: 'video',
-  },
-  {
-    title: 'BeardyBear',
-    description:
-      "An example of a small website for a local business. I'm doing this mainly for my YouTube series where I try to show how to make something like this.",
-    tags: ['Web Development', 'JavaScript', 'TypeScript', 'NodeJs', 'NestJs', 'Prisma', 'React', 'NextJs'],
-    promoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/beardybear-promo-pic.jpg',
-    promoType: 'picture',
+    links: {
+      live: 'https://tilter.nordicbeaver.io/',
+      github: 'https://github.com/NordicBeaver/tilter',
+      youtube: 'https://youtu.be/Zg8sSizPfYg',
+    },
   },
   {
     title: 'Fourier Painter',
@@ -34,6 +36,24 @@ const projects: Project[] = [
     tags: ['Web Development', 'JavaScript', 'TypeScript', 'Canvas', 'Math'],
     promoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/Fourier_promo.mov',
     promoType: 'video',
+    links: {
+      live: 'https://fourier-painter.nordicbeaver.io/',
+      github: 'https://github.com/NordicBeaver/fourier-painter',
+      youtube: 'https://youtu.be/sGwtJzLh6_k',
+    },
+  },
+  {
+    title: 'BeardyBear',
+    description:
+      "An example of a small website for a local business. I'm doing this mainly for my ongoing YouTube series where I try to show how to make something like this.",
+    tags: ['Web Development', 'JavaScript', 'TypeScript', 'NodeJs', 'NestJs', 'Prisma', 'React', 'NextJs'],
+    promoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/beardybear-promo-pic.jpg',
+    promoType: 'picture',
+    links: {
+      live: 'https://beardybear.nordicbeaver.io/',
+      github: 'https://github.com/NordicBeaver/beardybear-client',
+      youtube: 'https://www.youtube.com/watch?v=b_QDY1UIT7Y&list=PL7b0cPjh8z6K_4qLNu_QdE3RpiU6omViC',
+    },
   },
 ];
 
