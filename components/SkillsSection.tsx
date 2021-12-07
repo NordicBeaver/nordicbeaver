@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from './Container';
 import KeywordsList from './KeywordsList';
+import Section from './Section';
 import SectionHeading from './SectionHeading';
 import styles from './SkillsSection.module.css';
 
@@ -27,7 +28,7 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section className={styles.skillsSection}>
+    <Section>
       <Container>
         <SectionHeading>Skills</SectionHeading>
         <p className={styles.text}>
@@ -36,6 +37,6 @@ export default function SkillsSection() {
         </p>
         <KeywordsList keywords={skills}></KeywordsList>
       </Container>
-    </section>
+    </Section>
   );
 }

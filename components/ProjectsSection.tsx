@@ -3,6 +3,7 @@ import Container from './Container';
 import SectionHeading from './SectionHeading';
 import styles from './ProjectsSection.module.css';
 import ProjectArticle, { Project } from './ProjectArticle';
+import Section from './Section';
 
 const projects: Project[] = [
   {
@@ -59,13 +60,13 @@ const projects: Project[] = [
 
 export default function ProjectsSection() {
   return (
-    <section className={styles.projectsSection}>
+    <Section>
       <Container>
         <SectionHeading>My Projects</SectionHeading>
         {projects.map((project) => (
           <ProjectArticle project={project} key={project.title}></ProjectArticle>
         ))}
       </Container>
-    </section>
+    </Section>
   );
 }

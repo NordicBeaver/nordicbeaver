@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './ContactSection.module.css';
 import Container from './Container';
+import Section from './Section';
 import SectionHeading from './SectionHeading';
 
 export default function ContactSection() {
   return (
-    <section className={styles.contactSection}>
+    <Section>
       <Container>
         <SectionHeading>Contact Me</SectionHeading>
         <p>
@@ -16,6 +17,6 @@ export default function ContactSection() {
           </a>
         </p>
       </Container>
-    </section>
+    </Section>
   );
 }

@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './AboutMeSection.module.css';
 import Container from './Container';
+import Section from './Section';
 import SectionHeading from './SectionHeading';
 
 export default function AboutMeSection() {
   return (
-    <section className={styles.aboutMeSection}>
+    <Section>
       <Container>
         <SectionHeading>What I Do</SectionHeading>
         <p>
@@ -14,6 +15,6 @@ export default function AboutMeSection() {
           interested in web development. Particularly, in making complex web applications using Typescript/NodeJs/React.
         </p>
       </Container>
-    </section>
+    </Section>
   );
 }

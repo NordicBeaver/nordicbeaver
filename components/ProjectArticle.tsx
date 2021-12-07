@@ -26,7 +26,7 @@ export interface ProjectArticleProps {
 export default function ProjectArticle({ project }: ProjectArticleProps) {
   return (
     <article className={styles.article}>
-      <div>
+      <div className={styles.promo}>
         {project.promoType === 'video' ? (
           <video controls className={styles.video}>
             <source src={project.promoUrl}></source>
@@ -35,9 +35,9 @@ export default function ProjectArticle({ project }: ProjectArticleProps) {
           <Image src={project.promoUrl} alt="Project image" width="960" height="540"></Image>
         ) : null}
       </div>
-      <div>
-        <h3>{project.title}</h3>
-        <p>{project.description}</p>
+      <h3 className={styles.title}>{project.title}</h3>
+      <div className={styles.projectData}>
+        <p className={styles.projectDescription}>{project.description}</p>
         <KeywordsList keywords={project.tags}></KeywordsList>
         <div>
           {project.links.live ? (
