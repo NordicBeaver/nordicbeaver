@@ -1,17 +1,16 @@
 import React from 'react';
 import Container from './Container';
-import styles from './Footer.module.css';
+import styles from './Header.module.css';
 import SocialLinks from './SocialLinks';
 
-export default function Footer() {
+export default function Header() {
   return (
-    <footer className={styles.footer}>
+    <header>
       <Container>
         <div className={styles.content}>
-          <span className={styles.trademark}>2021 - Nordic Beaver</span>
           <SocialLinks></SocialLinks>
         </div>
       </Container>
-    </footer>
+    </header>
   );
 }
