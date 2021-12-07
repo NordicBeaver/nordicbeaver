@@ -1,0 +1,13 @@
+.footer {
+  background-color: var(--bg-dark-color);
+}
+
+.content {
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  margin-right: 2em;
+}
