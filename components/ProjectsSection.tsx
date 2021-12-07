@@ -27,6 +27,14 @@ const projects: Project[] = [
     promoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/beardybear-promo-pic.jpg',
     promoType: 'picture',
   },
+  {
+    title: 'Fourier Painter',
+    description:
+      "A simple web application, where you can draw a shape and then it's redrawn just by rotating sticks using Fourier Transform.",
+    tags: ['Web Development', 'JavaScript', 'TypeScript', 'Canvas', 'Math'],
+    promoUrl: 'https://nordicbeaver.fra1.digitaloceanspaces.com/Fourier_promo.mov',
+    promoType: 'video',
+  },
 ];
 
 export default function ProjectsSection() {
